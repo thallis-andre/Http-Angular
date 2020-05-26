@@ -1,27 +1,22 @@
-# RequestHttp
+# O projeto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
+* Projeto gerado utilizando o [Angular CLI](https://github.com/angular/angular-cli) versão 8.3.23.
 
-## Development server
+# Inicialização
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Clonar o repositório e rodar um `npm instal` para baixar as dependências.
 
-## Code scaffolding
+2. Para adicionar informações, baixe a extensão `REST Client` e utilize os métodos do arquivo `exemplo.http`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. Rodar o backend utilizado `json-server --watch db.json`.
 
-## Build
+4. Rodar o frontend utilizando `ng serve`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+# Conceitos abordados
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Variável de ambiente
 
-## Running end-to-end tests
+* Http GET + Pipe Async
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Http + Rxjs (Diferentes métodos de Unsubscribe)
