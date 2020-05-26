@@ -20,3 +20,5 @@
 * Http GET + Pipe Async
 
 * Http + Rxjs (Diferentes métodos de Unsubscribe)
+
+* Capturando e tratando erros da requisição
