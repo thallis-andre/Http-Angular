@@ -23,6 +23,8 @@
 
 * Capturando e tratando erros da requisição
 
-* Criar e editar formulários reativos
+* Formulários reativos
+
+* Listar, criar, editar e excluir dados
 
 * Guardas de rotas
