@@ -22,3 +22,7 @@
 * Http + Rxjs (Diferentes métodos de Unsubscribe)
 
 * Capturando e tratando erros da requisição
+
+* Criar e editar formulários reativos
+
+* Guardas de rotas
