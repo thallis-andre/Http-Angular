@@ -25,6 +25,6 @@
 
 * Formulários reativos
 
-* Listar, criar, editar e excluir dados
+* CRUD
 
 * Guardas de rotas
