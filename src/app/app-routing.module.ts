@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'cursos' },
+  { path: '', pathMatch: 'full', redirectTo: 'upload' },
   {
     path: 'cursos',
     loadChildren: './cursos/cursos.module#CursosModule'
@@ -11,6 +11,10 @@ const routes: Routes = [
   {
     path: 'rxjs-poc',
     loadChildren: './unsubscribe-rxjs/unsubscribe-rxjs.module#UnsubscribeRxjsModule'
+  },
+  {
+    path: 'upload',
+    loadChildren: './upload-file/upload-file.module#UploadFileModule'
   }
 ];
 

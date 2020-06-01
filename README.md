@@ -28,3 +28,5 @@
 * CRUD
 
 * Guardas de rotas
+
+* Backend em Nodejs
