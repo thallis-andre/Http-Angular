@@ -32,3 +32,5 @@
 * Backend em Nodejs
 
 * Upload de arquivos
+
+* Angular proxy
