@@ -30,3 +30,5 @@
 * Guardas de rotas
 
 * Backend em Nodejs
+
+* Upload de arquivos
