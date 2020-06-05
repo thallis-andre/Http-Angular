@@ -33,4 +33,6 @@
 
 * Upload de arquivos
 
+* Download de arquivos
+
 * Angular proxy
