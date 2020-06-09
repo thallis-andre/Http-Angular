@@ -1,6 +1,8 @@
 import { environment } from './../../../environments/environment';
 import { Component, OnInit } from '@angular/core';
 import { UploadFileService } from '../upload-file.service';
+import { uploadProgress, filterResponse } from 'src/app/shared/exjs-operators';
+
 
 @Component({
   selector: 'app-upload-file',
@@ -10,6 +12,8 @@ import { UploadFileService } from '../upload-file.service';
 export class UploadFileComponent implements OnInit {
 
   files: Set<File>;
+  progress = 0;
+
 
   constructor(private uploadService: UploadFileService) { }
 
@@ -27,12 +31,20 @@ export class UploadFileComponent implements OnInit {
       this.files.add(selectedFiles[i])
     }
     document.getElementById('customFileLabel').innerHTML = fileNames.join(', ')
+    this.progress = 0
   }
 
-  onUpload(){
-    if(this.files && this.files.size > 0){
+  onUpload() {
+    if (this.files && this.files.size > 0) {
       this.uploadService.upload(this.files, environment.BASE_URL + '/upload')
-        .subscribe(response => console.log('Upload concluido'))
+        .pipe(
+          uploadProgress(progress => {
+            console.log(progress);
+            this.progress = progress;
+          }),
+          filterResponse()
+        )
+        .subscribe(response => console.log('Upload Concluído'));
     }
   }
 
